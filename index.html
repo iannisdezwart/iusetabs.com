@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A story about tabs vs spaces,
+			and how you can improve the world by using tabs.">
+		<link rel="icon" href="/favicon.ico">
+
+		<title>I use tabs. Do you?</title>
+
+		<style>
+			body
+			{
+				max-width: 600px;
+				padding: .5em 1em;
+				margin: auto;
+			}
+
+			blockquote
+			{
+				font-style: italic;
+			}
+
+			p
+			{
+				text-align: justify;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>I use tabs. Do you?</h1>
+		<h4><em>
+			A story about tabs vs spaces, and how you can improve
+			the world by using tabs.
+		</em></h4>
+
+		<p>
+			As programmers, we have all been exposed to the problem
+			of different styles of indentation. You might prefer
+			using tabs for indentation, but others might prefer
+			spaces. If we are not constistent with the character
+			used for indentation, we end up with a mess of mixed
+			spaces and tabs. As a result, our code will be very hard
+			to read, since it might display differently on different
+			systems or editors.
+			<br>
+			Though most of the reasons for choosing one indentation
+			style over another are of aesthetic concerns, many
+			people don't realise that they might be giving up on
+			semantic meaning and accessibility for others.
+		</p>
+
+		<br>
+
+		<h2>ASCII entry #9: Horizontal Tab</h2>
+
+		<p>
+			Back in the old days, when FORTRAN and ALGOL were the
+			new craze, tabs were the standard way to indent code.
+			The ASCII character set has a horizontal tab, which is
+			a <em>control</em> character. Control characters differ
+			from graphical characters, because they command the
+			computer to perform a certain action instead of simply
+			rendering a letter or a symbol on the screen.
+			<br>
+			The tab character instructs the computer to move the
+			cursor to the next tab stop. On the other hand, spaces
+			are a <em>graphical</em> character, and simply render
+			whitespace on the screen. As a result, using the tab
+			character to indent source code provides a semantically
+			better meaning than a space. Tabs are single characters
+			that indicate a <em>disjunction</em> between two parts
+			of a program. Because they are inserted at the very
+			beginning of the lines of code, tabs will consistently
+			render nested blocks of indention at their own assigned
+			tab stop.
+		</p>
+
+		<br>
+
+		<h2>Spaces: those things that seperate words</h2>
+
+		<p>
+			Spaces have been around for a long time. They are
+			essential in making natural language readable, because
+			they seperate words. These ingenious characters are also
+			present in programming languages, where they seperate
+			tokens. Without them, code would be hard to read. Most
+			compilers and interpreters require us to seperate
+			certain types of tokens, such as identifiers and
+			numbers. If we didn't, the compiler would not be able
+			to understand the code correctly.
+			<br>
+			Thus, spaces are crucial to express code clearly and
+			unambiguously. They are, however, <em>not</em> meant to
+			be used for indentation. The sole purpose of spaces is
+			to seperate words, not to define layers of indention.
+			If spaces are used both for indentation and for
+			seperating words, spaces themselves become an ambiguous
+			character.
+		</p>
+
+		<br>
+
+		<h2>So why do people use spaces then?</h2>
+
+		<p>
+			That is a very good question. Probably because most IDEs
+			default to using spaces for indentation. To understand
+			why this happened, we will go back into the past. Back
+			in 1969, when UNIX was being developed and ASCII was
+			standardised by RFC #20, tabs stops became a customary.
+			Just like typewriters, hitting the tab key on a keyboard
+			would move the cursor to the next tab stop. In UNIX, tab
+			stops are laid out on a multiple of 8 characters.
+			<br><br>
+			When the devil felt like bringing terror to the world
+			and Windows was first released in 1985, things changed.
+			Windows used a tab stop of 4 characters, which caused
+			utter hysteria among programmers. Tabs were no longer
+			constistent among major operating systems. What's worse
+			is that people kind of started to like four character
+			indentation. Because of the consistency issues, some
+			pretentious fool came with the idea of using spaces for
+			indentation instead. They would be consistent for
+			everyone on all operating systems, after all. Right?
+			<br><br>
+			Well, back in the day, people weren't gifted with 32
+			Gigabytes of RAM and a 64-core processor. Using four
+			individual space characters instead of a single tab
+			character was causing a lot of unneeded redundancy.
+			<br>
+			The lovely developers who did not like this new trend
+			realised that all of this mess could be solved with just
+			some simple software. Editors can simply let the user
+			decide what tab width they want to use, and the editor
+			will display the code exactly like they want it to be,
+			but still with a tab character for superior semantic
+			meaning.
+		</p>
+
+		<br>
+
+		<h2>The apocalypse</h2>
+
+		<p>
+			In spite of the attempt to stop the hype of using spaces
+			for indentation, people started massively abandoning the
+			beloved tab character, and spaces quickly became the
+			norm. When programmers found out that using four spaces
+			allowed them to write more levels of indentation without
+			the feeling of lack of space, they became even lazier.
+			Experienced programmers became obsessed with using many
+			levels of indentation, and some of them even started
+			using <em>two</em> spaces instead of four, to allow them
+			to use <em>even more</em> levels of indentation.
+			<br><br>
+			Linus Torvalds warned us, but it was too late:
+		</p>
+
+		<blockquote>
+			"Now, some people will claim that having 8-character
+			indentations makes the code move too far to the right,
+			and makes it hard to read on a 80-character terminal
+			screen. The answer to that is that if you need more than
+			3 levels of indentation, you're screwed anyway, and
+			should fix your program."
+		</blockquote>
+
+		<p>
+			The script kiddies with their new constricting snakes,
+			red shiny stones and Indonesian islands that ran on the
+			web, did not care, however. The more layers of nested
+			indentation, the faster their scripts would hack into
+			the mainframes of the CIA.
+		</p>
+
+		<br>
+
+		<h2>Aestethics vs accessibility</h2>
+
+		<p>
+			Spaces have a graphical meaning. We are essentially
+			making a visual drawing of the code, where every letter
+			is laid out on a specific position on the screen. This
+			contrasts with tabs, which solely provide a semantical
+			meaning. Three tabs mean three layers of indention, but
+			eight spaces does not have any meaning on its own.
+			<br><br>
+			The core difference is the visual vs semantic meaning.
+			Spaces also restrict our freedom, because we are no
+			longer able to set our own preferred tab width. Most
+			people who choose to use spaces do this because of
+			visually aesthetic reasons. However, they forget that
+			not everyone might like their style of indentation, and
+			that it might lead to serious readibility issues for
+			visually impaired programmers. Around 3% of the world
+			has moderately or severely impaired eyesight, which many
+			programmers don't realise. These visually impaired
+			programmers are often forced to set a very specific tab
+			width to even be able to read code at all.
+			<br><br>
+			Meet Kevin, a lovely developer who has been happily
+			working for a company for many years. He has been
+			involved with the first couple of major projects, and
+			has done tremendous amounts of work for the business.
+			One of Kevin's coworkers, David, is working alone on a
+			small experimental project for the company, and decides
+			to be creative, and use spaces instead of the usual
+			tabs. He knows Kevin well. David remembers him as a
+			very friendly person, and respects him a lot because
+			Kevin is moderately visually impaired, but he is still
+			able to code, albeit with a huge font size, a crazy
+			colour theme, and constant scrolling to the left and
+			right of the screen.
+			<br>
+			The project David has been working on turns out to be
+			a success, and more people start working on it. One day
+			a major bug is discovered, and the programmers rush
+			together to fix it. When Kevin reviews the code, he
+			finds that David decided to use spaces instead of tabs,
+			and the code is not readable at all on his editor.
+			Kevin tells his coworkers that he cannot easily work
+			with the code, and that he will focus on another
+			project. Due to the heat of the moment and the severity
+			of the bug, his remark is not received by his coworkers.
+			<br><br>
+			As more and more people start using David's program,
+			it becomes one of the main objectives of the company.
+			As Kevin is not actively involved in the project, his
+			coworkers miss the fact that he cannot work with the
+			code in an easy way. More projects are started, and
+			they all use spaces instead of tabs. Kevin doesn't dare
+			to speak up, because he feels that he is the only one
+			that doesn't like spaces. Instead, he uses his IDE's
+			tool to convert the spaces to tabs. The tool is a bit
+			buggy though, as some of the spaces that are actually
+			used as alignment are mistakenly seen as indentation
+			instead, and because of the ambiguity of the spaces that
+			are used as token seperators, indentation, and
+			alignment, his tool cannot convert the code very well.
+			Kevin has to manually delete tabs from the converted
+			code that shouldn't be there, which is a pain for him.
+			<br><br>
+			Kevin becomes more fearful of speaking up about his
+			problems with the code using spaces, because he thinks
+			he will be seen as an obstacle who would ruin the new
+			code style of the company. It's not the first time Kevin
+			experiences this fear. Because he is burdened with his
+			eyesight on a daily basis, Kevin naturally fears about
+			being less productive than other, and even redundant.
+		</p>
+
+		<br>
+
+		<h2>Public service announcement</h2>
+
+		<p>
+			If you have been using spaces all the time, just because
+			it was your IDE's default, or for any other reason,
+			please try out tabs one time and notice how it doesn't
+			screw up your code at all. Using tabs works just as good
+			visually with your IDE settings, but your code will be
+			accessible to everyone!
+			<br><br>
+			<em>Care about the people around you? Use tabs!</em>
+		</p>
+
+		<br>
+
+		<h2>Sure, but ...</h2>
+
+		<p>
+			You might have some examples of code where you would
+			think using spaces would be better, so I will show you
+			some common arguments as to why spaces are better, and
+			refute them with counterexamples.
+		</p>
+
+		<h3>The dreaded 80 column limit</h3>
+
+		<p>
+			Many programmers set a column limit of a certain number
+			of characters for their source code. This is a good
+			thing, because it ensures the reader doesn't have to
+			scroll to the right, or lines fall off because they are
+			too long. Since programmers set their own preferred tab
+			width, people with smaller tab widths might write code
+			that fits within <em>their</em> column limit, but
+			someone with a bigger tab width might have lines exceed
+			their column limit.
+			<br>
+			...
+		</p>
+
+		<h3>Aligning code</h3>
+
+		<p>
+			Some programmers really like aligning code. Using tabs
+			for this just doesn't work, because you cannot do
+			alignments on a character basis. The truth is that you
+			should actually be using spaces for alignment!
+			<br>
+			Though some people really like aligning code like
+			illustrated below, it is not a good idea if you care
+			about accessibility. Alignment is a visual aid, and
+			might be hard to read for visual impaired people. On top
+			of that, it's just a pain for everyone to realign entire
+			blocks of code after editing just one line. I reckon
+			editor extensions should be used if the programmer
+			really wants their code to be laid out in a particular
+			way. Source code should not contain visual aids like
+			alignment. Editors should be held responsible for this.
+		</p>
+
+		<pre><code>
+int   speed   = 3;
+int   acc     = 5;
+float heading = 3.0;
+		</code></pre>
+
+		<h3>But my code should be read with N characters of indentation!</h3>
+
+		<p>
+			...
+		</p>
+	</body>
+</html>
